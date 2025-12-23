@@ -432,3 +432,176 @@ footer{
 footer p{
     margin: 0.5rem 0;
 }
+
+/* MEDIA QUERIES PARA RESPONSIVIDADE */
+
+/* Tablets e dispositivos médios */
+@media (max-width: 768px){
+    /* HEADER */
+    header{
+        height: auto;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo a{
+        font-size: 1.3rem;
+    }
+
+    header nav ul{
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .nav-link{
+        font-size: 1.1rem;
+    }
+
+    /* HERO */
+    .hero{
+        margin-top: 0;
+        padding: 2rem 1rem;
+    }
+
+    .hero h1{
+        font-size: 2rem;
+    }
+
+    .hero p{
+        font-size: 1.2rem;
+    }
+
+    /* CONTACT CARDS - Reduzir tamanho */
+    .contact-grid{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .contact-card{
+        padding: 1.5rem 1rem;
+    }
+
+    .contact-icon{
+        width: 60px;
+        height: 60px;
+    }
+
+    .contact-icon svg{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contact-card h3{
+        font-size: 1.2rem;
+    }
+
+    .contact-card p{
+        font-size: 0.85rem;
+    }
+}
+
+/* Dispositivos móveis pequenos */
+@media (max-width: 480px){
+    /* HEADER */
+    header{
+        padding: 0.8rem;
+    }
+
+    .logo a{
+        font-size: 0.8rem;
+    }
+
+    header nav ul{
+        gap: 0.8rem;
+    }
+
+    .nav-link{
+        font-size: 1rem;
+    }
+
+    /* CONTAINER */
+    .container{
+        padding: 0 1rem;
+    }
+
+    /* HERO */
+    .hero h1{
+        font-size: 1.5rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .btn{
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* SECTIONS */
+    .about, .technologies, .projects, .skills, .contact{
+        padding: 3rem 0;
+    }
+
+    .about h2, .technologies h2, .projects h2, .skills h2, .contact h2{
+        font-size: 2rem;
+    }
+
+    /* TECH GRID */
+    .tech-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .tech-item{
+        padding: 1.5rem 1rem;
+    }
+
+    .tech-item p{
+        display: none;
+    }
+
+    /* PROJECTS */
+    .projects-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* SKILLS */
+    .skills-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT CARDS - Reduzir ainda mais e mostrar 2 por linha */
+    .contact-grid{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.8rem;
+    }
+
+    .contact-card{
+        padding: 1rem 0.8rem;
+    }
+
+    .contact-icon{
+        width: 45px;
+        height: 45px;
+    }
+
+    .contact-icon svg{
+        width: 22px;
+        height: 22px;
+    }
+
+    .contact-card h3{
+        font-size: 1rem;
+    }
+
+    .contact-card p{
+        display: none;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 1.5rem 0;
+        font-size: 0.9rem;
+    }
+}
